@@ -1,0 +1,351 @@
+/*Allgemeines*/
+html {
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #000;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+	color-scheme: light dark;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #00c;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #509;
+}
+a[href^="http"]::after {
+	content: "↗";
+}
+caption {
+	font-weight: bold;
+}
+
+/*Header*/
+header {
+	background: #b21;
+	color: #fff;
+	padding: 0.5em;
+	text-align: center;
+}
+header a {
+	color: inherit !important;
+	vertical-align: middle;
+	text-decoration: none;
+	margin-right: 1em;
+}
+header img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 4em;
+	padding: 0.5em;
+}
+h1 {
+	margin: 0;
+	font-size: 2.5em;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: middle;
+}
+@media (max-width: 560px) {
+	h1 {
+		font-size: 2em;
+	}
+}
+@media (max-width: 400px) {
+	h1 {
+		font-size: 1.75em;
+	}
+}
+
+/*Navigation, Footer*/
+nav,
+footer {
+	background: #aaa;
+	padding: 0.5em;
+}
+nav ol,
+footer ul,
+footer p {
+	margin: 0.25em auto;
+	padding: 0;
+	max-width: 52em;
+}
+nav li,
+footer li {
+	display: inline;
+}
+.prev {
+	margin-right: 1em;
+}
+.next {
+	float: right;
+}
+footer li::after {
+	content: "\A0– ";
+}
+footer li:last-child::after {
+	content: none;
+}
+nav::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*Hauptinhalt*/
+article {
+	margin: auto;
+	padding: 0.5em 1em;
+	max-width: 50em;
+	background: #ffd;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	margin: 1.25em 0 0 0;
+}
+h2 {
+	margin: 0;
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.75em;
+	border-bottom: solid thin #666;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1.25em;
+}
+h6 {
+	font-size: 1em;
+}
+p {
+	margin: 1em 0;
+}
+
+pre {
+	overflow: auto;
+	border: dashed thin;
+	border-left: solid medium;
+	padding: 0.5em;
+}
+
+/*Kalender*/
+.month {
+	background: #fff;
+	border: solid thin #666;
+	border-radius: 3px;
+	box-shadow: 3px 3px #aaa;
+	padding: 3px;
+	display: inline-table;
+	margin: 1em 1em 1em 0;
+}
+.month td {
+	text-align: right;
+	padding: 3px;
+}
+.h1 {
+	color: #b00;
+	font-weight: bold;
+}
+.h2 {
+	color: #922;
+}
+
+/*Zitate*/
+blockquote {
+	border: solid thin #666;
+	border-radius: 0.5em;
+	box-shadow: 3px 3px #aaa;
+	padding: 2em 1em 1em;
+	margin: 3em 1em 1em 1em;
+	position: relative;
+	background: #ffe;
+}
+blockquote::before {
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><g stroke-width="2" fill="none" stroke="%23000"><path stroke-linecap="round" stroke-miterlimit="1" d="M 41,22 L 37,22 A 3,3 0,0,1 34,19 L 34,15 L 22,15 A 3,3 0,0,0 19,18 L 19,42 A 3,3 0,0,0 22,45 L 38,45 A 3,3 0,0,0 41,42 L 41,22 L 34,15" /></g></svg>');
+	border: solid thin #000;
+	border-radius: 50%;
+	background: #ffe;
+	position: absolute;
+	right: 2em;
+	top: -1.875em;
+	width: 3.75em;
+	height: 3.75em;
+}
+blockquote.diary::before {
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><g stroke-width="2" fill="none" stroke="%23000"><path d="M 30,45 L 30,22 A 7,7 0,0,0 23,15 L 14,15 A 3,3 0,0,0 11,18 L 11,42 A 3,3 0,0,0 14,45 L 46,45 A 3,3 0,0,0 49,42 L 49,18 A 3,3 0,0,0 46,15 L 37,15 A 7,7 0,0,0 30,22" /></g></svg>');
+}
+blockquote.letter::before {
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><g stroke-width="2" fill="none" stroke="%23000"><rect x="19" y="15" width="22" height="30" rx="3" /><rect stroke-width="1" x="31.5" y="18.5" width="6" height="6" /></g></svg>');
+}
+blockquote.image::before {
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><g stroke-width="2" fill="none" stroke="%23000"><rect x="15" y="18" width="30" height="24" rx="3" /><circle stroke-width="1" cx="37" cy="25" r="4" /><path stroke-width="1" d="M 15,34 C 24,25 35,38 45,32" /></g></svg>');
+}
+
+/*Datum, Uhrzeit*/
+.date {
+	text-align: right;
+}
+.time {
+	line-height: 0;
+}
+.time span:nth-child(2) {
+	width: 0;
+	display: inline-block;
+	overflow: hidden;
+}
+.time span:nth-child(3) {
+	vertical-align: super;
+	font-size: 90%;
+	text-decoration: underline;
+}
+.time.float {
+	float: right;
+	margin-left: 0.5em;
+}
+
+/*Galerie*/
+.gallery {
+	margin: 1em 0;
+	padding: 0;
+}
+.gallery li {
+	vertical-align: top;
+	display: inline-block;
+}
+.gallery li p:first-child {
+	margin: 0;
+	text-align: center;
+}
+.gallery li p {
+	max-width: 16em;
+	margin-top: 0;
+}
+.gallery img {
+	padding: 2px;
+	border: solid thin #666;
+	border-radius: 2px;
+	background: #fff;
+	color: #000;
+	max-width: 15em;
+	max-height: 30em;
+	width: auto;
+	height: auto;
+}
+blockquote.image p > a:only-child > img {
+	padding: 2px;
+	border: solid thin #666;
+	border-radius: 2px;
+	background: #fff;
+	color: #000;
+	max-width: 100%;
+	max-height: 40em;
+	width: auto;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background: #222;
+		color: #ddd;
+	}
+	a {
+		color: #aaf;
+	}
+	a:visited {
+		color: #f6f;
+	}
+	nav,
+	footer,
+	.month {
+		background: #333;
+	}
+	.h1 {
+		color: #f77;
+	}
+	.h2 {
+		color: #c99;
+	}
+	article {
+		background: #444;
+	}
+	blockquote {
+		background: #555;
+	}
+	blockquote::before {
+		border-color: #111;
+		background: #777;
+	}
+	.month,
+	blockquote {
+		box-shadow: 3px 3px #222;
+		border-color: #111;
+	}
+	h3 {
+		border-color: #aaa;
+	}
+	img {
+		border-color: #111;
+	}
+}
+@media print {
+	html {
+		font-family: serif;
+	}
+	html,
+	header,
+	article,
+	.month,
+	blockquote,
+	footer {
+		background: #fff;
+		color: #000;
+		box-shadow: none;
+		border-color: #000;
+	}
+	article,
+	footer p {
+		max-width: none;
+	}
+	img,
+	h3 {
+		border-color: #000;
+	}
+	blockquote::before {
+		background: #fff;
+		color: #000;
+		border-color: #000;
+	}
+	header img {
+		filter: grayscale(1) invert(1) brightness(2);
+	}
+	nav,
+	footer ul {
+		display: none;
+	}
+	a {
+		color: inherit !important;
+	}
+	a[href^="http"]::after {
+		content: " (" attr(href) ") ";
+	}
+}

@@ -1,0 +1,19 @@
+domain: schnark.github.io
+url: https://schnark.github.io
+baseurl: /mein-leben
+
+permalink: pretty
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: "/:year/:month/"
+titles_from_headings:
+  enabled:     true
+  strip_title: false
+  collections: true
+relative_links:
+  enabled:     true
+  collections: true

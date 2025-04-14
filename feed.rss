@@ -1,0 +1,22 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Mein Leben in Monaten</title>
+		<description>Mein Leben in Monaten</description>
+		<link>{{ site.url }}{{ site.baseurl }}/</link>
+		<language>de</language>
+
+{% for post in site.posts limit: 5 %}
+		<item>
+			<title>{{ post.title }}</title>
+			<link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+			<description><![CDATA[{{ post.content }}]]></description>
+		</item>
+{% endfor %}
+
+	</channel>
+</rss>

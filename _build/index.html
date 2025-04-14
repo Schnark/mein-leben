@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="utf-8">
+<title>Mein Leben in Monaten</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../res/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../res/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="stylesheet" href="../res/main.css">
+<link rel="stylesheet" href="build.css">
+<script src="lib/kramed.min.js" defer></script>
+<script src="calendar.js" defer></script>
+<script src="images.js" defer></script>
+<script src="letter-diary.js" defer></script>
+<script src="preview.js" defer></script>
+<script src="build.js" defer></script>
+</head><body>
+<header>
+<img src="../res/icon.svg" alt="">
+<h1>Mein Leben in Monaten</h1>
+</header>
+<nav><ul>
+<li><button class="active" data-id="calendar">Kalender</button></li>
+<li><button data-id="images">Bilder</button></li>
+<li><button data-id="letters">Briefe</button></li>
+<li><button data-id="diary">Tagebuch</button></li>
+<li><button data-id="preview">Vorschau</button></li>
+</ul></nav>
+<article>
+<section id="calendar-page">
+<p><select id="month">
+<option value="0">Januar</option>
+<option value="1">Februar</option>
+<option value="2">März</option>
+<option value="3">April</option>
+<option value="4">Mai</option>
+<option value="5">Juni</option>
+<option value="6">Juli</option>
+<option value="7">August</option>
+<option value="8">September</option>
+<option value="9">Oktober</option>
+<option value="10">November</option>
+<option value="11">Dezember</option>
+</select> <input id="year"></p>
+<pre id="month-code"></pre>
+<div id="month-preview"></div>
+<div id="sources"></div>
+</section>
+<section hidden id="images-page">
+<p><label>Datei: <input type="file" id="file"></label> oder <label>data-URL: <input id="url"></label></p>
+<p><label>Pfad: <input id="path" placeholder="2000-01/foo.jpg"></label></p>
+<p><label>Bildunterschrift: <input id="legend"></label></p>
+<p><label>Alternativtext: <input id="alt"></label></p>
+<p><label><input type="checkbox" id="large"> großes Bild</label></p>
+<pre id="image"></pre>
+<div id="images"></div>
+</section>
+<section hidden id="letters-page">
+<p><textarea id="letter"></textarea></p>
+<pre id="letter-code"></pre>
+</section>
+<section hidden id="diary-page">
+<p><textarea id="diary"></textarea></p>
+<pre id="diary-code"></pre>
+</section>
+<section hidden id="preview-page">
+<p><a href="https://kramdown.electricbook.works/">Online-Konverter</a></p>
+<p><textarea id="preview"></textarea></p>
+<div id="preview-output"></div>
+</section>
+</article>
+</body></html>

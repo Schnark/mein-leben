@@ -1,0 +1,48 @@
+/*Tabs*/
+nav ul {
+	margin: 0.25em auto;
+	padding: 0;
+	max-width: 52em;
+}
+
+nav li::after {
+	content: "\A0– ";
+}
+nav li:last-child::after {
+	content: none;
+}
+
+nav button {
+	color: #00c;
+	background: transparent;
+	font: inherit;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	-moz-appearance: none;
+}
+nav button:hover {
+	text-decoration: underline;
+}
+@media (prefers-color-scheme: dark) {
+	nav button {
+		color: #aaf;
+	}
+}
+nav button.active {
+	text-decoration: none;
+	color: inherit;
+	cursor: default;
+	font-weight: bold;
+}
+
+/*Allgemein*/
+textarea {
+	width: 100%;
+	height: 5em;
+}
+
+/*Kalender*/
+#year {
+	width: 4em;
+}

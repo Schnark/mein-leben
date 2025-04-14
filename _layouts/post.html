@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<nav><ol>
+{% if page.previous %}<li><a class="prev" href="{{site.baseurl}}{{page.previous.url}}">← {{page.previous.title}}</a></li>{% endif %}
+{% if page.next %}<li><a class="next" href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}} →</a></li>{% endif %}
+</ol>
+</nav>
+<article>
+{{content}}
+</article>
+<nav><ol>
+{% if page.previous %}<li><a class="prev" href="{{site.baseurl}}{{page.previous.url}}">← {{page.previous.title}}</a></li>{% endif %}
+{% if page.next %}<li><a class="next" href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}} →</a></li>{% endif %}
+</ol>
+</nav>

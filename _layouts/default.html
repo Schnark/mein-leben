@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="utf-8">
+<title>Mein Leben in Monaten{% if page.title %}: {{page.title}}{% endif %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="{{site.url}}{{site.baseurl}}/res/icon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="{{site.url}}{{site.baseurl}}/res/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" href="{{site.url}}{{site.baseurl}}/feed.rss" title="RSS-Feed für „Mein Leben in Monaten“">
+<link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/res/main.css">
+</head><body>
+<header>
+<a href="{{site.url}}{{site.baseurl}}/"><img src="{{site.url}}{{site.baseurl}}/res/icon.svg" alt="Startseite" title="Startseite"></a>
+<h1>Mein Leben in Monaten</h1>
+</header>
+{{content}}
+<footer><ul>
+<li><a href="{{site.url}}{{site.baseurl}}/">Über „Mein Leben in Monaten“</a></li>
+<li><a href="{{site.url}}{{site.baseurl}}/#rechtliches">Rechtliches</a></li>
+<li><a href="{{site.url}}{{site.baseurl}}/#kontakt">Kontakt</a></li>
+<li><a href="{{site.url}}{{site.baseurl}}/1987/04/">Start: April 1987</a></li>
+<li><a href="{{site.url}}{{site.baseurl}}/feed.rss">RSS-Feed</a></li>
+</ul><p>
+{% assign months = "Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember" | split: "|" %}
+{% assign m = site.time | date: "%-m" | minus: 1 %}
+Das Projekt „Mein Leben in Monaten“ läuft seit April 2025 und wurde zuletzt im {{months[m]}} {{site.time | date: "%Y"}} aktualisiert
+</p></footer>
+</body></html>
