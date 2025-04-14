@@ -24,7 +24,7 @@ a:hover {
 a:visited {
 	color: #509;
 }
-a[href^="http"]::after {
+article a[href^="http"]::after {
 	content: "↗";
 }
 caption {
@@ -345,7 +345,7 @@ blockquote.image p > a:only-child > img {
 	a {
 		color: inherit !important;
 	}
-	a[href^="http"]::after {
+	article a[href^="http"]::after {
 		content: " (" attr(href) ") ";
 	}
 }
