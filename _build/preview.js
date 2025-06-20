@@ -15,6 +15,11 @@ function mdToHtml (md) {
 		/<p>\{:.(\w+)\}<\/p>\n<(\w+)/g,
 		'<$2 class="$1"'
 	);
+	//kramed sometimes messes up nested closing tags
+	html = html.replace(
+		/&lt;\/(\w+)&gt;/g,
+		'</$1>'
+	);
 	return html;
 }
 
