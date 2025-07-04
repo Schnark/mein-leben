@@ -12,6 +12,8 @@ Zum einen hätte ich keine Übersicht über die Daten. Viele interessante Beobac
 
 Zweitens: Wenn schon ich keinen Überblick hätte, dann hätten potentielle Leser diesen erst recht nicht. Damit wäre die Veröffentlichung praktisch nutzlos.
 
+Außerdem würde ich sicher einiges vergessen und übersehen, wenn ich nicht langsam und systematisch vorgehe.
+
 Und schließlich will ich nicht alle Daten veröffentlichen. Da könnten irgendwo Passwörter drinstecken, Daten, die die Privatsphäre anderer Menschen berühren, und Ähnliches, das ich vor einer Veröffentlichung entfernen muss. Außerdem sind mir die Ereignisse der letzten Jahre noch zu privat um sie jetzt schon zu teilen. Wo sollte ich den Schnitt machen? Und wann den Rest veröffentlichen?
 
 ### Veröffentlichung nach Monaten
@@ -25,6 +27,8 @@ Zum einen gibt es Ereignisse, an die ich mich zwar erinnere, aber nicht mehr sag
 Problematischer sind da schon Erinnerungen, die sich gar nicht an Monaten festmachen lassen. Manche Entwicklungen haben zwar einen klaren Anfang und ein klares Ende, aber oft war mir zu Beginn nicht bewusst, dass da gerade eine längere Tradition beginnt, und am Ende nicht, dass sie nicht wiederkehren wird. Hier werde ich wohl etwas ahistorisch sein und einen Blick in die Zukunft wagen. Häufig beginnen und enden solche Entwicklungen aber schleichend. In solchen Fällen werde ich wohl auch manchmal auf dem Höhepunkt der Entwicklung etwas dazu schreiben. Und schließlich gibt es so banale Dinge wie die Uhrzeit, zu der ich üblicherweise schlafen gehe. Es ist eigentlich viel zu uninteressant, um es aufzuschreiben, aber andererseits sagt es ja durchaus etwas über mich aus. Zum Glück gibt es bei den Texten, die ich teilen will, immer wieder Notizen zu solchen nebensächlichen Details, früher oder später werde ich also auch solche Daten veröffentlichen.
 
 Diese Art der Veröffentlichung bringt es mit sich, dass der Anfang etwas langweilig werden wird, aber ein langsamer Start ist sicher auch nicht das Schlechteste. Ich plane, einige der Monate, über die ich kaum etwas zu berichten weiß, zusammenzufassen, sodass es etwas schneller voran geht. Da ich ein gutes Gedächtnis und viele Erinnerungsstücke habe, wird es dann bald interessanter.
+
+Vielleicht fragst du dich (so wie ich), wie zuverlässig meine Erinnerungen an so lange zurückliegende Ereignisse sind. Tatsächlich gibt es ein paar Ereignisse, an die ich zunächst nur Erinnerungen hatte, später aber auch Notizen dazu gefunden habe. In allen diesen Fällen wurden meine Erinnerungen ziemlich exakt bestätigt.
 
 ### Die Inhalte
 
