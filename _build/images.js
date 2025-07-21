@@ -81,6 +81,7 @@ var file = document.getElementById('file'),
 	legend = document.getElementById('legend'),
 	alt = document.getElementById('alt'),
 	large = document.getElementById('large'),
+	small = document.getElementById('small'),
 	output = document.getElementById('image'),
 	images = document.getElementById('images'),
 	currentImg, currentImgUrl;
@@ -118,7 +119,7 @@ function onChange () {
 	if (thumb) {
 		w = thumb.w;
 		h = thumb.h;
-		thumbPath = path.value.replace(/(\.[^.]+)$/, '-thumb$1');
+		thumbPath = small.checked ? path.value : path.value.replace(/(\.[^.]+)$/, '-thumb$1');
 	} else {
 		w = currentImg.width;
 		h = currentImg.height;
@@ -133,12 +134,18 @@ function onChange () {
 		alt.value,
 		large.checked
 	);
-	img.push('<p>Bild zum Herunterladen:</p>');
-	if (thumb) {
-		img = ['<p>Bilder zum Herunterladen:</p>'];
+	if (thumbPath === path.value) {
+		img.push('<p>Bild zum Herunterladen:</p>');
+		if (thumb) {
+			img.push(imgLink(thumb.url, thumbPath));
+		} else {
+			img.push(imgLink(currentImgUrl, path.value));
+		}
+	} else {
+		img.push('<p>Bilder zum Herunterladen:</p>');
 		img.push(imgLink(thumb.url, thumbPath));
+		img.push(imgLink(currentImgUrl, path.value));
 	}
-	img.push(imgLink(currentImgUrl, path.value));
 	img = img.join(' ');
 	images.innerHTML = img;
 }
@@ -149,6 +156,7 @@ path.addEventListener('change', onChange);
 legend.addEventListener('change', onChange);
 alt.addEventListener('change', onChange);
 large.addEventListener('change', onChange);
+small.addEventListener('change', onChange);
 onImgChange();
 
 })();

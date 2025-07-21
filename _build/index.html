@@ -11,6 +11,7 @@
 <script src="calendar.js" defer></script>
 <script src="images.js" defer></script>
 <script src="letter-diary.js" defer></script>
+<script src="timetable.js" defer></script>
 <script src="preview.js" defer></script>
 <script src="build.js" defer></script>
 </head><body>
@@ -22,6 +23,7 @@
 <li><button class="active" data-id="calendar">Kalender</button></li>
 <li><button data-id="images">Bilder</button></li>
 <li><button data-id="letters">Briefe</button></li>
+<li><button data-id="timetable">Stundenplan</button></li>
 <li><button data-id="diary">Tagebuch</button></li>
 <li><button data-id="preview">Vorschau</button></li>
 </ul></nav>
@@ -43,7 +45,6 @@
 </select> <input id="year"></p>
 <pre id="month-code"></pre>
 <div id="month-preview"></div>
-<div id="sources"></div>
 </section>
 <section hidden id="images-page">
 <p><label>Datei: <input type="file" id="file"></label> oder <label>data-URL: <input id="url"></label></p>
@@ -51,12 +52,22 @@
 <p><label>Bildunterschrift: <input id="legend"></label></p>
 <p><label>Alternativtext: <input id="alt"></label></p>
 <p><label><input type="checkbox" id="large"> großes Bild</label></p>
+<p><label><input type="checkbox" id="small"> geringe Auflösung</label></p>
 <pre id="image"></pre>
 <div id="images"></div>
 </section>
 <section hidden id="letters-page">
 <p><textarea id="letter"></textarea></p>
 <pre id="letter-code"></pre>
+</section>
+<section hidden id="timetable-page">
+<p><label>Zeiten: <select id="timetable-times">
+<option value="0">ab 7:50</option>
+<option value="1">ab 7:45</option>
+<option value="2">ab 8:00</option>
+</select></label></p>
+<div id="timetable-input"></div>
+<pre id="timetable-code"></pre>
 </section>
 <section hidden id="diary-page">
 <p><textarea id="diary"></textarea></p>

@@ -146,8 +146,9 @@ pre {
 	padding: 0.5em;
 }
 
-/*Kalender*/
-.month {
+/*Kalender, Stundenplan*/
+.month,
+.timetable {
 	background: #fff;
 	border: solid thin #666;
 	border-radius: 3px;
@@ -155,6 +156,11 @@ pre {
 	padding: 3px;
 	display: inline-table;
 	margin: 1em 1em 1em 0;
+}
+.timetable {
+	border-width: medium;
+	border-collapse: collapse;
+	background: #ffe;
 }
 .month td {
 	text-align: right;
@@ -166,6 +172,29 @@ pre {
 }
 .h2 {
 	color: #922;
+}
+.timetable th,
+.timetable td {
+	border: solid thin #666;
+	padding: 3px 8px;
+}
+.timetable tr:first-child th {
+	border-bottom-width: medium;
+}
+.timetable tr.break-s th,
+.timetable tr.break-s td {
+	border-top-width: medium;
+}
+.timetable tr.break-l th,
+.timetable tr.break-l td {
+	border-top-width: thick;
+}
+.timetable tr th:first-child {
+	font-size: 90%;
+	font-weight: normal;
+	white-space: nowrap;
+	text-align: right;
+	border-right-width: medium;
 }
 
 /*Zitate*/
@@ -225,6 +254,7 @@ blockquote.image::before {
 .gallery {
 	margin: 1em 0;
 	padding: 0;
+	hyphens: auto;
 }
 .gallery li {
 	vertical-align: top;
@@ -232,7 +262,6 @@ blockquote.image::before {
 }
 .gallery li p:first-child {
 	margin: 0;
-	text-align: center;
 }
 .gallery li p {
 	max-width: 16em;
@@ -288,6 +317,7 @@ blockquote.image p > a:only-child > img {
 	article {
 		background: #444;
 	}
+	.timetable,
 	blockquote {
 		background: #555;
 	}
@@ -296,8 +326,13 @@ blockquote.image p > a:only-child > img {
 		background: #777;
 	}
 	.month,
+	.timetable,
 	blockquote {
 		box-shadow: 3px 3px #222;
+		border-color: #111;
+	}
+	.timetable th,
+	.timetable td {
 		border-color: #111;
 	}
 	h3 {
@@ -315,11 +350,16 @@ blockquote.image p > a:only-child > img {
 	header,
 	article,
 	.month,
+	.timetable,
 	blockquote,
 	footer {
 		background: #fff;
 		color: #000;
 		box-shadow: none;
+		border-color: #000;
+	}
+	.timetable th,
+	.timetable td {
 		border-color: #000;
 	}
 	article,

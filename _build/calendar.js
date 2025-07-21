@@ -105,29 +105,10 @@ function createMonth (m, y) {
 	].join('\n');
 }
 
-function getSources (m, y) {
-	var sources = [
-		['Stadtbücherei', '1993-02', '2021-08'],
-		['Schulhefte', '1993-08', '2006-06'],
-		['Wikipedia', '2008-02', ''],
-		['E-Mails (Backup)', '2008-10', '2011-07'],
-		['Phabricator', '2010-05', ''],
-		['E-Mails', '2011-08', ''],
-		['GitHub', '2016-03', '']
-	],
-	date = String(y) + '-' + ((m < 9) ? '0' : '') + String(m + 1);
-	return sources.filter(function (entry) {
-		return entry[1] <= date && (!entry[2] || date <= entry[2]);
-	}).map(function (entry) {
-		return entry[0];
-	});
-}
-
 var monthInput = document.getElementById('month'),
 	yearInput = document.getElementById('year'),
 	codeOutput = document.getElementById('month-code'),
-	codePreview = document.getElementById('month-preview'),
-	sourcesOutput = document.getElementById('sources');
+	codePreview = document.getElementById('month-preview');
 
 function onChange () {
 	var month = Number(monthInput.value),
@@ -136,7 +117,7 @@ function onChange () {
 			'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
 			'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
 		],
-		html, sources;
+		html;
 	if (isNaN(year) || year < 1900 || year >= 3000) {
 		return;
 	}
@@ -144,13 +125,6 @@ function onChange () {
 	codePreview.innerHTML = html;
 	html = '## ' + months[month] + ' ' + year + '\n\n' + html;
 	codeOutput.textContent = html;
-	sources = getSources(month, year);
-	if (sources.length) {
-		html = '<p>Weitere Quellen:</p><ul><li>' + sources.join('</li><li>') + '</li></ul>';
-	} else {
-		html = '';
-	}
-	sourcesOutput.innerHTML = html;
 }
 
 monthInput.addEventListener('change', onChange);
