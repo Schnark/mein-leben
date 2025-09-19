@@ -36,7 +36,7 @@ function convertDiary (latex) {
 		.replace(/\\(?:fehler|ergaenzt)\{(.*?)\}/g, '$1')
 		.replace(/\\\\/g, '\n')
 		.replace(/\\datumx?\{(.*?)\}/g, '<p class="date">$1</p>\n')
-		.replace(/\\uhr\{(\d+)\}\{(\d+)\}%\n/g, '<span class="time"><span>$1</span><span>:</span><span>$2</span></span> ')
+		.replace(/\\uhr\{(\d+)\}\{(\d+)\}%\n/g, '<span class="time float"><span>$1</span><span>:</span><span>$2</span></span> ')
 		.replace(/\\uhrtext\{(\d+)\}\{(\d+)\}/g, '<span class="time"><span>$1</span><span>:</span><span>$2</span></span>')
 		.replace(/%\n([^ ]*)/g, '$1\n')
 		//Reisetagebücher

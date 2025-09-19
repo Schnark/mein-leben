@@ -46,3 +46,8 @@ textarea {
 #year {
 	width: 4em;
 }
+
+/*Stundenplan*/
+.timetable input {
+	width: 10em;
+}
