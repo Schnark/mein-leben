@@ -41,7 +41,7 @@ header {
 header a {
 	color: inherit !important;
 	vertical-align: middle;
-	text-decoration: none;
+	text-decoration: none !important;
 	margin-right: 1em;
 }
 header img {
