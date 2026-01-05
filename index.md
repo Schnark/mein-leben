@@ -64,7 +64,7 @@ Außerdem gibt es auch datenschutzrechtliche Aspekte zu beachten: Da es sich um 
 
 ### Kontakt
 
-Wenn du mich wegen irgendetwas im Zusammenhang mit diesem Projekt kontaktieren willst, kannst du dies [über Github](https://github.com/Schnark/mein-leben/issues) tun, oder mir eine E-Mail schreiben, an die öffentliche Gmail-Adresse mit dem Namen `listenleser`. Egal, ob es nur um die Korrektur eines Rechtschreibfehlers geht, du einfach mal ein Lob loswerden willst, oder sonst einen Kommentar bei mir hinterlassen willst, ich freue mich auf deine Nachricht!
+Wenn du mich wegen irgendetwas im Zusammenhang mit diesem Projekt kontaktieren willst, kannst du dies [über Github](https://github.com/Schnark/mein-leben/issues) tun, oder mir eine E-Mail schreiben, an die öffentliche Gmail-Adresse mit dem Namen `listenleser`. Egal, ob es nur um die Korrektur eines Rechtschreibfehlers geht, du einfach mal ein Lob loswerden willst, dich für irgendwelche Details interessierst, zu denen ich nichts oder nur knapp geschrieben habe, oder sonst einen Kommentar bei mir hinterlassen willst, ich freue mich auf deine Nachricht!
 
 ### Los geht’s!
 

@@ -9,14 +9,20 @@ layout: none
 		<description>Mein Leben in Monaten</description>
 		<link>{{ site.url }}{{ site.baseurl }}/</link>
 		<language>de</language>
-
 {% for post in site.posts limit: 5 %}
+{% assign y = post.date | date: "%Y" -%}
+{% assign m = post.date | date: "%-m" -%}
+{% assign t = y | times: 12 | plus: m | minus: 23869 -%}
+{% assign y = t | divided_by: 24 | plus: 2025 -%}
+{% assign m = t | divided_by: 2 | modulo: 12 | plus: 1 -%}
+{% assign d = t | modulo: 2 | times: 15 | plus: 1 -%}
+{% capture t %}{{ y }}-{% if m < 10 %}0{% endif %}{{ m }}-{% if d < 10 %}0{% endif %}{{ d }}T12:00:00Z{% endcapture %}
 		<item>
 			<title>{{ post.title }}</title>
 			<link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+			<pubDate>{{ t | date_to_rfc822 }}</pubDate><!--approximate date, actually a few days later-->
 			<description><![CDATA[{{ post.content }}]]></description>
 		</item>
 {% endfor %}
-
 	</channel>
 </rss>
