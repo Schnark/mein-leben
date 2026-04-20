@@ -144,6 +144,7 @@ pre {
 	border: dashed thin;
 	border-left: solid medium;
 	padding: 0.5em;
+	white-space: pre-line;
 }
 
 /*Kalender, Stundenplan*/
@@ -278,7 +279,7 @@ blockquote.image::before {
 	width: auto;
 	height: auto;
 }
-blockquote.image p > a:only-child > img {
+blockquote p > a:only-child > img {
 	padding: 2px;
 	border: solid thin #666;
 	border-radius: 2px;

@@ -28,19 +28,29 @@ function convertLetter (text) {
 
 function convertDiary (latex) {
 	latex = latex
-		.replace(/\\,/g, ' ')
+		.replace(/\\\\/g, '\n')
+		.replace(/\\,/g, '&nbsp;')
+		.replace(/~/g, '&nbsp;')
+		.replace(/\\ /g, ' ')
 		.replace(/"=/g, '-')
+		.replace(/--/g, '–')
+		.replace(/\\&/g, '&')
+		.replace(/\\dots/g, '…')
+		.replace(/\\euro/g, '€')
+
+		.replace(/\\textit\{(.*?)\}/g, '_$1_')
+		.replace(/\\textbf\{(.*?)\}/g, '**$1**')
+
 		.replace(/\\seite\{\d+\}%\n/g, '')
 		.replace(/\\fussnote\{.*?\}/g, '')
 		.replace(/\\leerzeile(?:\[\d\])?/g, '')
 		.replace(/\\(?:fehler|ergaenzt)\{(.*?)\}/g, '$1')
-		.replace(/\\\\/g, '\n')
 		.replace(/\\datumx?\{(.*?)\}/g, '<p class="date">$1</p>\n')
 		.replace(/\\uhr\{(\d+)\}\{(\d+)\}%\n/g, '<span class="time float"><span>$1</span><span>:</span><span>$2</span></span> ')
 		.replace(/\\uhrtext\{(\d+)\}\{(\d+)\}/g, '<span class="time"><span>$1</span><span>:</span><span>$2</span></span>')
 		.replace(/%\n([^ ]*)/g, '$1\n')
 		//Reisetagebücher
-		.replace(/\\eintrag\{(.*?)\}/g, '**$1**');
+		.replace(/\\eintrag\{(.*?)\}/g, '<b>$1</b>');
 	return addBlockquote(latex, 'diary');
 }
 
