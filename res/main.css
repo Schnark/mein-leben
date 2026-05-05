@@ -145,6 +145,7 @@ pre {
 	border-left: solid medium;
 	padding: 0.5em;
 	white-space: pre-line;
+	background: #ffe;
 }
 
 /*Kalender, Stundenplan*/
@@ -160,8 +161,14 @@ pre {
 }
 .timetable {
 	border-width: medium;
-	border-collapse: collapse;
+	/*border-collapse: collapse; this removes border-radius, so add a hack below*/
+	border-spacing: 0;
+	padding: 0;
 	background: #ffe;
+}
+.timetable tbody {
+	display: inline-table;
+	border-collapse: collapse;
 }
 .month td {
 	text-align: right;
@@ -251,7 +258,12 @@ blockquote.image::before {
 	margin-left: 0.5em;
 }
 
-/*Galerie*/
+/*Bilder*/
+img[src*="-thumb."] {
+	cursor: -moz-zoom-in;
+	cursor: zoom-in;
+}
+
 .gallery {
 	margin: 1em 0;
 	padding: 0;
@@ -279,6 +291,7 @@ blockquote.image::before {
 	width: auto;
 	height: auto;
 }
+
 blockquote p > a:only-child > img {
 	padding: 2px;
 	border: solid thin #666;
