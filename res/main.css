@@ -185,6 +185,7 @@ pre {
 .timetable td {
 	border: solid thin #666;
 	padding: 3px 8px;
+	min-width: 2em;
 }
 .timetable tr:first-child th {
 	border-bottom-width: medium;
