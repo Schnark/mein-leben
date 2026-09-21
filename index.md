@@ -50,6 +50,8 @@ Alle Bilder im Eintrag verlinken auf das Bild in voller Auflösung. Wie groß di
 
 Welche Leser erwarte ich? Ich stelle mir vor, dass du nach irgendetwas im Internet gesucht hast und dabei mehr oder weniger zufällig auf eine meiner Seiten gestoßen bist. Vielleicht hast du dort sogar gefunden, was du eigentlich gesucht hast, in jedem Fall aber hast du noch ein bisschen weitergelesen und bist hängengeblieben. Nun bist du hier auf dieser Startseite und liest, was mich zu diesem Projekt bewegt hat und was ich vorhabe.
 
+Oder du bist vielleicht als Historiker oder einfach so daran interessiert, wie das Leben, der Alltag „damals“ so war. Wie hat man seine freie Zeit verbracht, als es noch keine Smartphones gab? Wann wurden welche Inhalte in der Schule behandelt? Auch darüber wirst du auf diesen Seiten viel erfahren können, wobei ich dich vorwarnen muss, dass ich nicht in allen Punkten so ganz typisch bin (aber wer ist das schon).
+
 Wenn du dich auf mein Projekt einlassen möchtest, dann solltest du als nächstes ganz von vorne beginnen und einen Monat nach dem anderen lesen. Vielleicht habe ich erst vor kurzem mit dem Projekt begonnen, und du kommst schnell ans Ende. In diesem Fall hoffe ich, dass du voller Vorfreude auf die Veröffentlichung des nächsten Monats wartest. Es gibt auch ein [RSS-Feed](feed.rss), falls du damit auf dem Laufenden bleiben willst.
 
 Vielleicht bist du aber erst auf diese Seite gestoßen, lange nachdem dieses Projekt auf die ein oder andere Art zu Ende gegangen ist. In diesem Fall wirst du leider auf weitere Monate verzichten müssen, aber ich hoffe, dass es zum Ausgleich wenigstens viele, viele Monatsseiten mit interessanten Inhalten gibt.
