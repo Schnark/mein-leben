@@ -28,7 +28,9 @@ function mdToHtml (md) {
 }
 
 function fixHtml (html) {
-	return html.replace(/"\.\.\/files\//g, '"../_drafts/files/');
+	return html
+		.replace(/"\.\.\/files\//g, '"../_drafts/files/')
+		.replace(/"(\d{4})-(0[1-9]|1[0-2])-01-a.md"/g, 'HTTPS://schnark.github.io/mein-leben/$1/$2/');
 }
 
 var previewInput = document.getElementById('preview'),
