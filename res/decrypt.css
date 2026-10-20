@@ -1,0 +1,20 @@
+.error {
+	background: #fcc;
+	border: solid medium #f00;
+	padding: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+	.error {
+		background: #500;
+	}
+}
+
+.hint-0 {
+	cursor: pointer;
+}
+
+input {
+	width: 20em;
+	max-width: 100%;
+}

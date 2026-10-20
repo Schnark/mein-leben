@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="utf-8">
+<title>Mein Leben in Monaten: Verschlüsselte Inhalte erstellen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../res/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../res/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="stylesheet" href="../res/main.css">
+<link rel="stylesheet" href="encrypt.css">
+<script src="../res/crypto-lib.js" defer></script>
+<script src="encrypt.js" defer></script>
+</head><body>
+<header>
+<img src="../res/icon.svg" alt="">
+<h1>Mein Leben in Monaten</h1>
+</header>
+<article>
+<h2>Verschlüsselte Inhalte erstellen</h2>
+<form id="form">
+<p>
+<label>Zahl der Füllbits: <input id="input-bits" type="number" value="13"></label><br>
+<label>Länge des Salt: <input id="input-salt" type="number" value="16"></label><br>
+<input id="input-hash" type="hidden" value="SHA-256">
+<input id="input-encrypt" type="hidden" value="PBKDF2/SHA-256/10000+AEC-CBC-256+HMAC/SHA-256">
+<label>Enddatum: <input id="input-date" value=""></label>
+</p>
+<p>
+<button id="button-time" type="button">Geschwindigkeit testen</button><br>
+<span id="output-time"></span>
+</p>
+<p>
+<label>Fragen (je drei Zeilen, Frage, Antwort, Monat mit Hinweis):<br>
+<textarea id="input-questions"></textarea>
+</label><br>
+<label>Datei: <input id="input-file" type="file"></label>
+</p>
+<p>
+<button type="submit">Dateien erzeugen</button>
+</p>
+</form>
+<p><span id="file-json"></span> <span id="file-encrypted"></span></p>
+<pre id="output-json"></pre>
+<p><a href="HTTPS://schnark.github.io/mein-leben/decrypt/?date=local">Testen</a></p>
+</article>
+</body></html>

@@ -144,7 +144,7 @@ pre {
 	border: dashed thin;
 	border-left: solid medium;
 	padding: 0.5em;
-	white-space: pre-line;
+	white-space: pre-wrap;
 	background: #ffe;
 }
 

@@ -7,6 +7,12 @@
 <link rel="icon" href="{{site.url}}{{site.baseurl}}/res/icon.svg" sizes="any" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" href="{{site.url}}{{site.baseurl}}/feed.rss" title="RSS-Feed für „Mein Leben in Monaten“">
 <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/res/main.css">
+{% if page.css %}{% for url in page.css -%}
+<link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/res/{{url}}">
+{% endfor %}{% endif -%}
+{% if page.js %}{% for url in page.js -%}
+<script src="{{site.url}}{{site.baseurl}}/res/{{url}}" defer></script>
+{% endfor %}{% endif -%}
 </head><body>
 <header>
 <a href="{{site.url}}{{site.baseurl}}/"><img src="{{site.url}}{{site.baseurl}}/res/icon.svg" alt="Startseite" title="Startseite"></a>
