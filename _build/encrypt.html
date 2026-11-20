@@ -19,14 +19,17 @@
 <form id="form">
 <p>
 <label>Zahl der Füllbits: <input id="input-bits" type="number" value="13"></label><br>
-<label>Länge des Salt: <input id="input-salt" type="number" value="16"></label><br>
+<label>Länge des Salt: <input id="input-salt" type="number" value="16"></label>
 <input id="input-hash" type="hidden" value="SHA-256">
 <input id="input-encrypt" type="hidden" value="PBKDF2/SHA-256/10000+AEC-CBC-256+HMAC/SHA-256">
-<label>Enddatum: <input id="input-date" value=""></label>
 </p>
 <p>
 <button id="button-time" type="button">Geschwindigkeit testen</button><br>
 <span id="output-time"></span>
+</p>
+<p>
+<label>Enddatum: <input id="input-date" value=""></label><br>
+<label>Beschreibung (optional): <textarea id="input-desc"></textarea></label>
 </p>
 <p>
 <label>Fragen (je drei Zeilen, Frage, Antwort, Monat mit Hinweis):<br>

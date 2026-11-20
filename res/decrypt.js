@@ -110,8 +110,9 @@ function formatMonth (date) {
 }
 
 function getIntroHtml (options) {
-	return '<h3>Fragen</h3><p>Die verschlüsselten Inhalte und die Fragen dazu ' +
-		'beziehen sich auf die Zeit bis ' + formatMonth(options.date) + '.</p>';
+	var desc = options.desc || 'Die verschlüsselten Inhalte und die Fragen dazu ' +
+			'beziehen sich auf die Zeit bis ' + formatMonth(options.date) + '.';
+	return '<h3>Fragen</h3><p>' + desc + '</p>';
 }
 
 function buildFormHtml (questions) {

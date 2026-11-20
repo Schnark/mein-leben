@@ -76,6 +76,8 @@ function encodeQuestions (questions, options) {
 				};
 				if (/^\d{4}-\d{2}-\d{2}$/.test(question[1])) {
 					data.type = 'date';
+				} else if (/^\d+$/.test(question[1])) {
+					data.type = 'number';
 				}
 				data.hint = hint;
 				return data;
@@ -116,7 +118,7 @@ function bitsToOptions (bits) {
 }
 
 function getOptions (ignoreDate) {
-	var options = bitsToOptions(Number(document.getElementById('input-bits').value));
+	var options = bitsToOptions(Number(document.getElementById('input-bits').value)), desc;
 	options.saltLength = Number(document.getElementById('input-salt').value);
 	options.hashType = document.getElementById('input-hash').value;
 	options.encryptType = document.getElementById('input-encrypt').value;
@@ -125,6 +127,10 @@ function getOptions (ignoreDate) {
 		if (!(/^\d{4}-(?:0[1-9]|1[0-2])$/).test(options.date)) {
 			throw new Error('Datum `' + options.date + '` im falschen Format');
 		}
+	}
+	desc = document.getElementById('input-desc').value;
+	if (desc) {
+		options.desc = desc;
 	}
 	return options;
 }
